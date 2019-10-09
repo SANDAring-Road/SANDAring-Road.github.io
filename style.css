@@ -1,0 +1,287 @@
+body									{font-family: 'メイリオ',
+											'Hiragino Kaku Gothic Pro',
+											'Souce Sans Pro'
+											sans-serif;
+											background-color: rgb(200,200,200);
+											margin: 0;}
+
+/* サイト名 */
+.site									{background-color: #444444;
+											padding: 10px;
+											text-align: center;}
+
+.site a								{color: rgb(220,220,220);
+											font-size: 30px;
+											font-family: 'Paytone One',sans-serif;
+											text-decoration: none;}
+
+.site a img						{vertical-align: -10px;
+											margin-right: 10px;}
+
+/* 見出し */
+.title h1 					  {width: 900px;
+											display: block;
+											color: #930000;
+											font-size: 20px;
+											font-weight: bold;
+											margin-left: auto;
+											margin-right: auto;}
+
+/* 記事 */
+.kiji									{background-color: rgb(240,240,240);
+											width: 900px;
+											margin-left: auto;
+											margin-right: auto;
+											border: solid 1px #aaaaaa;
+											padding: 30px;
+											-moz-box-sizing: border-box;
+											box-sizing: border-box;
+											margin-top: 25px;
+											margin-bottom: 15px;
+											box-shadow: 1px 1px 3px #aaaaaa;
+											border-radius: 20px;
+											overflow: hidden;}
+
+.kiji h1							{margin-top: 0;
+											margin-bottom: 20px;
+											font-size: 36px;}
+
+.kiji h1 span					{display: block;
+											margin-bottom: 20px;
+											color: #930000;
+											font-size: 20px;
+											font-weight: bold;}
+
+.kiji h2							{clear: both;
+											border-bottom: solid 5px rgb(0,0,140);_}
+
+.kiji p								{margin-top: 0;
+											margin-bottom: 20px;
+											line-height: 2;
+											text-align: justify;}
+
+.kijiinfo							{margin-bottom: 20px;
+											color: #666666;}
+
+/* 記事sub */
+.kiji-sub							{background-color: rgb(240,240,240);
+											width: 900px;
+											margin-left: auto;
+											margin-right: auto;
+											border: solid 1px #aaaaaa;
+											-moz-box-sizing: border-box;
+											box-sizing: border-box;
+											margin-bottom: 15px;
+											box-shadow: 1px 1px 3px #aaaaaa;
+											border-radius: 20px;
+											overflow: hidden;
+											padding: 0;}
+
+.kiji-sub h1					{margin-top: 0;
+											margin-bottom: 0;
+											font-size: 24px;}
+
+.kiji-sub time				{font-size: 12px;
+											color: #ffffff;
+											background-color: rgb(144,88,85);
+											border-radius: 10px;
+											padding: 2px 20px 2px 20px;
+											margin-left: 15px;}
+
+.kiji-sub a						{color: #000000;
+											text-decoration: none;
+											display: block;
+											overflow: hidden;
+											padding: 20px;}
+
+.kiji-sub p						{margin-left: 50px;
+											margin-bottom: 5px;}
+
+/* フッター */
+.copyright						{color: #666666;
+											font-size: 14px;
+											text-align: center;}
+
+/* 画像を中央に配置するレイアウト */
+figure.photo-center		{text-align: center;
+											margin-top: 30px;
+											margin-bottom: 30px}
+
+/* 画像を左に配置するレイアウト */
+figure.photo-left			{margin: 0;
+											margin-right: 20px;
+											margin-bottom: 20px;
+											float: left}
+
+figure.photo-left img {width: 550px}
+
+/* 画像を右に配置するレイアウト */
+figure.photo-right		{margin: 0;
+											margin-left: 20px;
+											float: right}
+
+figure.photo-right img {width: 550px}
+
+figure.right 					{margin: 0;
+											margin-left: 20px;
+											float: right;}
+
+figure.right img			{width: 400px;}
+
+/* ナビゲーションメニュー */
+.menu									{text-align: center;
+											padding: 10px;
+											background-color: #770000;}
+
+.menu ul							{display: inline-flex;
+											margin: 0;
+											padding: 0;
+											list-style: 0;}
+
+.menu li							{display: inline;
+											font-size: 15px;}
+
+.menu li a						{padding: 14px 50px 14px 50px;
+											background-color: #770000;
+											color: #ffffff;
+											text-decoration: none;}
+
+.menu li a:hover			{background-color: #662222;}
+
+/* ヘッダー画像 */
+.headimg							{width: 100%;
+											height: auto;
+											vertical-align: bottom;}
+/* キャッチコピー */
+.catch								{margin: 0;
+											padding: 15px;
+											background-color: rgba(55,55,55,0.6);
+											font-size: 18px;
+											margin-left: 70px;
+											margin-bottom: 45px;
+											color: rgb(235,235,235);}
+
+/* 概要 */
+.pickup								{margin-bottom: 20px;
+											margin-top: 30px;}
+
+.gaiyou a							{display: block;
+											color: #ffffff;
+											text-align: center;
+											text-decoration: none;}
+
+.gaiyou span					{display: block;
+											padding: 36px 0;
+											font-size: 38px;}
+
+.gaiyou .fa-database	{background-color: #bfbd13;}
+.gaiyou .fa-bar-chart-o	{background-color: #c58839;}
+.gaiyou .fa-envelope	{background-color: #859f46;}
+
+.gaiyou h2						{margin: 0;
+											padding: 5px 0;
+											background-color: #222222;
+											font-size: 20px;
+											font-weight: normal;}
+
+.gaiyou p							{margin: 0;
+											padding: 15px 0;
+											background-color: #524e3c;
+											font-size: 14px;}
+/* お知らせ */
+.news									{padding: 20px;
+											margin-top: 20px;
+											background-color: rgb(245,245,245);
+											border: solid 6px rgb(180,180,180);}
+
+.news h2							{margin-top: 0;
+											margin-bottom: 5px;
+											font-size: 18px;
+											color: rgb(120,120,120);}
+
+.news ul							{margin: 0;
+											padding: 0;
+											list-style: none;}
+
+.news li a						{display: block;
+											padding: 5px;
+											border-bottom: dotted 2px rgb(200,200,200);
+											color: #000000;
+											font-size: 14px;
+											text-decoration: none;}
+
+.news time						{color: rgb(120,120,120);
+											margin-right: 10px;}
+
+/* TOPページ グリッド */
+.top 									{display: grid;
+											grid-template-columns: [left] 1fr [main] 1140px [main-end]  1fr [right];
+											grid-template-rows: [head] auto [menu] auto [img] auto [pickup] auto [news] auto [foot] auto [bottom];}
+
+.site									{grid-column-start: left;
+											grid-column-end: right;
+											grid-row-start: head;}
+
+.menu									{grid-column-start: left;
+											grid-column-end: right;
+											grid-row-start: menu;}
+
+.headimg							{grid-column-start: left;
+											grid-column-end: right;
+											grid-row-start: img;}
+
+.catch								{grid-column-start: left;
+											grid-column-end: right;
+											grid-row-start: img;
+											justify-self: start;
+											align-self: end;}
+
+.pickup								{grid-column-start: main;
+											grid-row-start: pickup;
+											display: grid;
+											grid-template-columns: 1fr 1fr 1fr;
+											grid-template-rows: auto;
+											grid-column-gap: 15px;}
+
+.news									{grid-column-start: main;
+											grid-row-start: news;}
+
+.copyright						{grid-column-start: main;
+											grid-row-start: foot;}
+
+/* メンバーサブ */
+.member-sub						{width: 900px;
+											margin-left: auto;
+											margin-right: auto;
+											padding: 20px 20px;
+											overflow: hidden;
+											background-color: rgb(225,225,225);}
+
+.member-sub ul				{display: flex;
+											margin: 0;
+											padding: 0;
+											list-style: none;}
+
+.member-sub li a			{display: block;
+											padding: 5px;
+											color: #000000;
+											font-size: 13px;
+											text-decoration: none}
+
+.member-sub li a h1		{text-align: center;
+											margin-top: 0;
+											margin-bottom: 5px;}
+
+.member-sub li a:hover	{background-color: #eeeeee}
+
+.member-sub img				{text-align: center;
+											max-width: 100%;
+											height: auto;}
+
+/* メンバー紹介 */
+.introduction					{border: dotted 2px rgb(180,180,180);
+											font-size: 14px;}
+
+
+.introduction	th			{text-align: left;
+											font-weight: normal;}
