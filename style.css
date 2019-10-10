@@ -24,8 +24,33 @@ body									{font-family: 'メイリオ',
 											color: #930000;
 											font-size: 20px;
 											font-weight: bold;
+											margin-top: 30px;
+											margin-bottom: 30px;
 											margin-left: auto;
 											margin-right: auto;}
+/* サイトについて */
+.about								{background-color: rgb(240,240,240);
+											width: 900px;
+											margin-left: auto;
+											margin-right: auto;
+											border: solid 1px #aaaaaa;
+											padding: 30px;
+											-moz-box-sizing: border-box;
+											box-sizing: border-box;
+											margin-top: 25px;
+											margin-bottom: 15px;
+											box-shadow: 1px 1px 3px #aaaaaa;
+											overflow: hidden;}
+
+.about h1							{margin-top: 10px;
+											margin-bottom: 30px;
+											font-size: 24px;}
+
+.about p							{margin-top: 0;
+											margin-bottom: 20px;
+											line-height: 1.7;
+											text-align: justify;
+											font-size: 15px;}
 
 /* 記事 */
 .kiji									{background-color: rgb(240,240,240);
@@ -100,7 +125,9 @@ body									{font-family: 'メイリオ',
 /* フッター */
 .copyright						{color: #666666;
 											font-size: 14px;
-											text-align: center;}
+											text-align: center;
+											margin-top: 40px;
+											margin-bottom: 30px;}
 
 /* 画像を中央に配置するレイアウト */
 figure.photo-center		{text-align: center;
@@ -113,7 +140,15 @@ figure.photo-left			{margin: 0;
 											margin-bottom: 20px;
 											float: left}
 
-figure.photo-left img {width: 550px}
+figure.photo-left img {width: 550px;}
+
+figure.photo-about		{margin: 0;
+											margin-right: 20px;
+											margin-bottom: 20px;
+											float: left;}
+
+figure.photo-about img {margin-left: 10px;
+												width: 390px;}
 
 /* 画像を右に配置するレイアウト */
 figure.photo-right		{margin: 0;
@@ -174,13 +209,13 @@ figure.right img			{width: 400px;}
 											padding: 36px 0;
 											font-size: 38px;}
 
-.gaiyou .fa-database	{background-color: #bfbd13;}
-.gaiyou .fa-bar-chart-o	{background-color: #c58839;}
-.gaiyou .fa-envelope	{background-color: #859f46;}
+.gaiyou .fa-database	{background-color: rgb(200,150,50);}
+.gaiyou .fa-bar-chart-o	{background-color: rgb(100,150,80);}
+.gaiyou .fa-envelope	{background-color: rgb(155,180,235);}
 
 .gaiyou h2						{margin: 0;
 											padding: 5px 0;
-											background-color: #222222;
+											background-color: rgb(50,50,50);
 											font-size: 20px;
 											font-weight: normal;}
 
@@ -213,6 +248,29 @@ figure.right img			{width: 400px;}
 .news time						{color: rgb(120,120,120);
 											margin-right: 10px;}
 
+/* SNSメニュー */
+.sns ul								{display: flex;
+											flex-direction: column;
+											margin-top: 20px;
+											padding: 0;
+											list-style: none;}
+
+.sns li								{flex: 1;}
+
+.sns li a							{display: block;
+											margin-bottom: 10px;
+											padding: 10px;
+											border-radius: 4px;
+											color: #ffffff;
+											font-size: 20px;
+											text-decoration: none;
+											text-align: center;}
+
+.sns li a:hover				{opacity: 0.8;}
+
+.fa-twitter						{background-color: #55acee;}
+.fa-instagram					{background-color: pink;}
+
 /* TOPページ グリッド */
 .top 									{display: grid;
 											grid-template-columns: [left] 1fr [main] 1140px [main-end]  1fr [right];
@@ -244,7 +302,15 @@ figure.right img			{width: 400px;}
 											grid-column-gap: 15px;}
 
 .news									{grid-column-start: main;
-											grid-row-start: news;}
+											grid-row-start: news;
+											width: 70%;
+											box-sizing: border-box;}
+
+.sns 									{grid-column-start: main;
+											grid-row-start: news;
+											width: 28%;
+											box-sizing: border-box;
+											justify-self: end;}
 
 .copyright						{grid-column-start: main;
 											grid-row-start: foot;}
@@ -253,7 +319,7 @@ figure.right img			{width: 400px;}
 .member-sub						{width: 900px;
 											margin-left: auto;
 											margin-right: auto;
-											padding: 20px 20px;
+											padding: 15px 15px;
 											overflow: hidden;
 											background-color: rgb(225,225,225);}
 
@@ -270,17 +336,17 @@ figure.right img			{width: 400px;}
 
 .member-sub li a h1		{text-align: center;
 											margin-top: 0;
-											margin-bottom: 5px;}
+											margin-bottom: 0;}
 
 .member-sub li a:hover	{background-color: #eeeeee}
 
-.member-sub img				{text-align: center;
-											max-width: 100%;
+.member-sub img				{max-width: 100%;
 											height: auto;}
 
 /* メンバー紹介 */
 .introduction					{border: dotted 2px rgb(180,180,180);
-											font-size: 14px;}
+											font-size: 14px;
+											margin-left: 30px;}
 
 
 .introduction	th			{text-align: left;
