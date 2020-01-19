@@ -1,7 +1,6 @@
 body									{font-family: 'メイリオ',
 											'Hiragino Kaku Gothic Pro',
-											'Souce Sans Pro'
-											sans-serif;
+											'Souce Sans Pro';
 											background-color: rgb(200,200,200);
 											margin: 0;}
 
@@ -17,6 +16,18 @@ body									{font-family: 'メイリオ',
 
 .site a img						{vertical-align: -10px;
 											margin-right: 10px;}
+
+/* トグルボタン */
+/*
+button								{padding: 6px;
+											border: none;
+											background-color: transparent;
+											color: #888888;
+											font-size: 28px;
+											cursor: pointer;}
+
+button:focus					{outline: none;}
+*/
 
 /* 見出し */
 .title h1 					  {width: 900px;
@@ -42,7 +53,7 @@ body									{font-family: 'メイリオ',
 											box-shadow: 1px 1px 3px #aaaaaa;
 											overflow: hidden;}
 
-.about h1							{margin-top: 10px;
+.about h2							{margin-top: 10px;
 											margin-bottom: 30px;
 											font-size: 24px;}
 
@@ -78,7 +89,7 @@ body									{font-family: 'メイリオ',
 											font-weight: bold;}
 
 .kiji h2							{clear: both;
-											border-bottom: solid 5px rgb(0,0,140);_}
+											border-bottom: solid 5px rgb(0,0,140);}
 
 .kiji p								{margin-top: 0;
 											margin-bottom: 20px;
@@ -165,18 +176,17 @@ figure.right img			{width: 400px;}
 
 /* ナビゲーションメニュー */
 .menu									{text-align: center;
-											padding: 10px;
 											background-color: #770000;}
 
 .menu ul							{display: inline-flex;
 											margin: 0;
-											padding: 0;
-											list-style: 0;}
+											padding: 0;}
 
 .menu li							{display: inline;
 											font-size: 15px;}
 
-.menu li a						{padding: 14px 50px 14px 50px;
+.menu li a						{display: block;
+											padding: 10px 50px 10px 50px;
 											background-color: #770000;
 											color: #ffffff;
 											text-decoration: none;}
@@ -272,11 +282,16 @@ figure.right img			{width: 400px;}
 /* TOPページ グリッド */
 .top 									{display: grid;
 											grid-template-columns: [left] minmax(20px,1fr) [main] minmax(auto,1140px) [main-end]  minmax(20px,1fr) [right];
-											grid-template-rows: [head] auto [menu] auto [img] auto [catch] auto [pickup] auto [news] auto [foot] auto [bottom];}
+											grid-template-rows: [head] auto [menu] auto [img] auto [catch] auto [pickup] auto [news] auto [sns] auto [foot] auto [bottom];}
 
 .site									{grid-column-start: left;
 											grid-column-end: right;
 											grid-row-start: head;}
+
+button								{grid-column-start: main;
+											grid-row-start: head;
+											justify-self: end;
+											align-self: center;}
 
 .menu									{grid-column-start: left;
 											grid-column-end: right;
@@ -316,19 +331,45 @@ figure.right img			{width: 400px;}
 											grid-row-start: foot;}
 
 /* ############# 767px以下 ############## */
-@@media (max-width: 767px) {
+@media (max-width: 767px) {
 
-	.menu ul						{flex-direction: column;}
+	.menu								{text-align: left;
+											overflow: hidden;}
+
+	.menu ul						{display: flex;
+											flex-direction: column;
+											text-align: left;}
+
+  .pickup							{grid-template-columns: 1fr;
+											grid-template-rows: auto auto auto;
+											grid-row-gap: 15px;}
+
+	.gaiyou a						{display: grid;
+											grid-template-columns: 1fr 4fr;
+											grid-template-rows: auto auto;}
+
+  .gaiyou a span			{grid-row-end: span 2;}
+
+  .news 							{width: auto;}
+
+	.sns								{grid-row-start: sns;
+											width: auto;
+											justify-self: stretch;}
+
+	.about      				{width: auto;}
+
+	.kiji-sub						{width: auto;}
 
 }
 /* ############# 599px以下 ############## */
-@@media (max-width: 599px) {
+@media (max-width: 599px) {
 
-	.catch							{grid-row-start: catch;
+	.catch							{width: 100%;
+											grid-row-start: catch;
 											margin-left: 0;
-											margin-bottom: 20px;
+											margin-bottom: 10px;
 											padding: 0;
-											font-size: 5vw;}
+											font-size: 4vw;}
 }
 
 /* メンバーサブ */
@@ -356,7 +397,7 @@ figure.right img			{width: 400px;}
 
 .member-sub li a:hover	{background-color: #eeeeee}
 
-.member-sub img				{max-width: 100%;
+.member-sub img				{width: 290px;
 											height: auto;}
 
 /* メンバー紹介 */
@@ -367,4 +408,3 @@ figure.right img			{width: 400px;}
 
 .introduction	th			{text-align: left;
 											font-weight: normal;}
-
